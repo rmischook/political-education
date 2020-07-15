@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/political-education/static/css/main.b792a898.chunk.css",
-    "main.js": "/political-education/static/js/main.62ff1784.chunk.js",
-    "main.js.map": "/political-education/static/js/main.62ff1784.chunk.js.map",
-    "runtime-main.js": "/political-education/static/js/runtime-main.35f1c08c.js",
-    "runtime-main.js.map": "/political-education/static/js/runtime-main.35f1c08c.js.map",
-    "static/js/2.a2c56392.chunk.js": "/political-education/static/js/2.a2c56392.chunk.js",
-    "static/js/2.a2c56392.chunk.js.map": "/political-education/static/js/2.a2c56392.chunk.js.map",
-    "index.html": "/political-education/index.html",
-    "precache-manifest.8bdd6f32ac0dbee893df5cedca354835.js": "/political-education/precache-manifest.8bdd6f32ac0dbee893df5cedca354835.js",
-    "service-worker.js": "/political-education/service-worker.js",
-    "static/css/main.b792a898.chunk.css.map": "/political-education/static/css/main.b792a898.chunk.css.map",
-    "static/js/2.a2c56392.chunk.js.LICENSE.txt": "/political-education/static/js/2.a2c56392.chunk.js.LICENSE.txt"
+    "main.css": "/political-education/build/static/css/main.b792a898.chunk.css",
+    "main.js": "/political-education/build/static/js/main.62ff1784.chunk.js",
+    "main.js.map": "/political-education/build/static/js/main.62ff1784.chunk.js.map",
+    "runtime-main.js": "/political-education/build/static/js/runtime-main.fafb0433.js",
+    "runtime-main.js.map": "/political-education/build/static/js/runtime-main.fafb0433.js.map",
+    "static/js/2.a2c56392.chunk.js": "/political-education/build/static/js/2.a2c56392.chunk.js",
+    "static/js/2.a2c56392.chunk.js.map": "/political-education/build/static/js/2.a2c56392.chunk.js.map",
+    "index.html": "/political-education/build/index.html",
+    "precache-manifest.1520d6a62aa3974cec97b3c6a5ba6a7c.js": "/political-education/build/precache-manifest.1520d6a62aa3974cec97b3c6a5ba6a7c.js",
+    "service-worker.js": "/political-education/build/service-worker.js",
+    "static/css/main.b792a898.chunk.css.map": "/political-education/build/static/css/main.b792a898.chunk.css.map",
+    "static/js/2.a2c56392.chunk.js.LICENSE.txt": "/political-education/build/static/js/2.a2c56392.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.35f1c08c.js",
+    "static/js/runtime-main.fafb0433.js",
     "static/js/2.a2c56392.chunk.js",
     "static/css/main.b792a898.chunk.css",
     "static/js/main.62ff1784.chunk.js"
