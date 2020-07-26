@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/political-education/build/static/css/main.b792a898.chunk.css",
-    "main.js": "/political-education/build/static/js/main.62ff1784.chunk.js",
-    "main.js.map": "/political-education/build/static/js/main.62ff1784.chunk.js.map",
-    "runtime-main.js": "/political-education/build/static/js/runtime-main.fafb0433.js",
-    "runtime-main.js.map": "/political-education/build/static/js/runtime-main.fafb0433.js.map",
-    "static/js/2.a2c56392.chunk.js": "/political-education/build/static/js/2.a2c56392.chunk.js",
-    "static/js/2.a2c56392.chunk.js.map": "/political-education/build/static/js/2.a2c56392.chunk.js.map",
-    "index.html": "/political-education/build/index.html",
-    "precache-manifest.1520d6a62aa3974cec97b3c6a5ba6a7c.js": "/political-education/build/precache-manifest.1520d6a62aa3974cec97b3c6a5ba6a7c.js",
-    "service-worker.js": "/political-education/build/service-worker.js",
-    "static/css/main.b792a898.chunk.css.map": "/political-education/build/static/css/main.b792a898.chunk.css.map",
-    "static/js/2.a2c56392.chunk.js.LICENSE.txt": "/political-education/build/static/js/2.a2c56392.chunk.js.LICENSE.txt"
+    "main.css": "/pol-ed/static/css/main.be828997.chunk.css",
+    "main.js": "/pol-ed/static/js/main.f48b8057.chunk.js",
+    "main.js.map": "/pol-ed/static/js/main.f48b8057.chunk.js.map",
+    "runtime-main.js": "/pol-ed/static/js/runtime-main.bb9a0e60.js",
+    "runtime-main.js.map": "/pol-ed/static/js/runtime-main.bb9a0e60.js.map",
+    "static/js/2.5045a7d5.chunk.js": "/pol-ed/static/js/2.5045a7d5.chunk.js",
+    "static/js/2.5045a7d5.chunk.js.map": "/pol-ed/static/js/2.5045a7d5.chunk.js.map",
+    "index.html": "/pol-ed/index.html",
+    "precache-manifest.908b5b87380f693a8c25b8d504b4329c.js": "/pol-ed/precache-manifest.908b5b87380f693a8c25b8d504b4329c.js",
+    "service-worker.js": "/pol-ed/service-worker.js",
+    "static/css/main.be828997.chunk.css.map": "/pol-ed/static/css/main.be828997.chunk.css.map",
+    "static/js/2.5045a7d5.chunk.js.LICENSE.txt": "/pol-ed/static/js/2.5045a7d5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fafb0433.js",
-    "static/js/2.a2c56392.chunk.js",
-    "static/css/main.b792a898.chunk.css",
-    "static/js/main.62ff1784.chunk.js"
+    "static/js/runtime-main.bb9a0e60.js",
+    "static/js/2.5045a7d5.chunk.js",
+    "static/css/main.be828997.chunk.css",
+    "static/js/main.f48b8057.chunk.js"
   ]
 }

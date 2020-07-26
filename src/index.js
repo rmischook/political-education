@@ -2,122 +2,99 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Square extends React.Component {
-  render() {
-    return (
-      <button
-        className="square"
-        onClick={() => this.props.onClick()}
-      >
-        {this.props.value}
-      </button>
-    );
-  }
+
+
+class Section extends React.Component {
+ 
+	constructor(props) {
+	    super(props);
+	    this.state = {
+	      title: props.title,
+	      subtitle: props.subtitle,
+	      sectionItems: props.sectionItems,	      
+	    };
+	}
+
+	renderItems() {
+		return this.state.sectionItems.map((sectionItem) => (
+			    sectionItem.render()
+			 ));
+	}
+
+  	render() {
+
+    	return (
+      		 <div className="section">
+      		 <h1>| {this.state.title}</h1>
+      		 <p className="subtitle">{this.state.subtitle}</p>
+
+      		 {this.renderItems()}
+      		 
+      		 </div>
+    	);
+  	}
 }
 
-class Board extends React.Component {
+class SectionItem extends React.Component {
+	constructor(props) {
+	    super(props);
+	    this.state = {
+	      title: props.title,
+	      imgUrl: props.imgUrl,
+	    };
+	}
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      squares: Array(9).fill(null),
-      xIsNext: true,
-    };
-  }
-
-  handleClick(i) {
-    const squares = this.state.squares.slice();
-    if (calculateWinner(squares) || squares[i]) {
-      return;
-    }
-    squares[i] = this.state.xIsNext ? 'X' : 'O';
-    this.setState({
-      squares: squares,
-      xIsNext: !this.state.xIsNext,
-    });
-  }
-
-
-  renderSquare(i) {
-    return (
-      <Square
-        value={this.state.squares[i]}
-        onClick={() => this.handleClick(i)} />
-    );
-  }
-
-  render() {
-    const winner = calculateWinner(this.state.squares);
-    let status;
-    if (winner) {
-      status = 'Winner: ' + winner;
-    } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-    }
-
-    return (
-      <div>
-        <div className="status">{status}</div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
-      </div>
-    );
-  }
+  	render() {
+    	return (
+      		 <div className="section-item">
+      		 <img alt="item image" src={this.state.imgUrl} />
+      		 {this.state.title}
+      		 </div>
+    	);
+  	}
 }
 
-class Game extends React.Component {
-  render() {
-    return (
-      <div className="game">
-        <div className="game-board">
-          <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
-      </div>
-    );
-  }
+class Banner extends React.Component {
+	render() {
+		return (
+			<div>
+				<div className="top-banner wide">
+        			<img alt="banner" src={"pol-ed/assets/momentum.png"} />
+      			</div>
+      			<img alt="banner" className="wide" src={"pol-ed/assets/pol-ed-banner.png"} />
+      		</div>
+		);
+	}
+}
+ 
+class Site extends React.Component {
+	render() {
+		return (
+			<div>
+				<Banner /> 
+				
+				<Section title="Featured" subtitle="Events and resources that we are featuring this week." 
+				  sectionItems={[new SectionItem({title:"Reclaiming Work", imageUrl:"https://novaramedia.com/wp-content/uploads/2018/12/novaramedia-opengraph-1200x630.png"}),
+				                 new SectionItem({title:"Searching For Socialism", imageUrl:""})]} />
+				
+				<Section title="Topics" sectionItems={[]} />
+				<Section title="Podcasts and Videos" subtitle="Socialist multimedia from around the Web" sectionItems={[]}/>
+				<Section title="Books" subtitle="Take a deeper dive..." sectionItems={[]} />
+				<Section title="Alternative Media" subtitle="News and current events with a socialist slant" sectionItems={[]} />
+
+
+
+      		</div>
+		);
+	}
 }
 
 // ========================================
 
 ReactDOM.render(
-  <Game />,
+  <Site />,
   document.getElementById('root')
 );
 
 
-function calculateWinner(squares) {
-  const lines = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8],
-    [0, 4, 8],
-    [2, 4, 6],
-  ];
-  for (let i = 0; i < lines.length; i++) {
-    const [a, b, c] = lines[i];
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
-    }
-  }
-  return null;
-}
+
